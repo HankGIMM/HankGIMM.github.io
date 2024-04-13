@@ -4,15 +4,33 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
-
+html{
+    background-color: lightslategray;
+}
 body{
     /* display: flex; flex casuing werid display */
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: darkslategray;
+    background-color: lightblue;
     text-align: center;
     
+}
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: left;
+}
+.col{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px 0;
 }
 nav{
     display: flex;
@@ -27,11 +45,15 @@ nav a{
     color: white;
     font-size: 20px;
 }
+nav a:hover{
+    color: orange;
+}
 nav ul{
     display: flex;
     justify-content: space-around;
     width: 50%;
 }
+
 img{
     display: block;
   margin-left: auto;
