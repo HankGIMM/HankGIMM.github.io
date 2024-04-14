@@ -8,13 +8,22 @@ html{
     background-color: lightslategray;
 }
 body{
-    /* display: flex; flex casuing werid display */
+    display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     background-color: lightblue;
     text-align: center;
-    
+}
+div{
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto;
 }
 footer{
     position: fixed;
