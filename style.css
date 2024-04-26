@@ -1,13 +1,9 @@
-/* *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
-} */
 html {
     background-color: lightslategray;
-    overflow-x: hidden; ;
+    overflow-x: hidden;
 }
+
+
 h3 {
     text-align: center;
     font-size: 10px;
@@ -15,14 +11,6 @@ h3 {
     margin: 10px;
 }
 
-/* body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: lightblue;
-    text-align: center;
-} */
 .row {
     background-color: ivory;
     border: 2px solid black;
@@ -31,21 +19,9 @@ h3 {
     border-radius: 10px;
 }
 
-div {
-    /* display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    margin: 20px 0; */
-}
 #rowSM {
     display: fixed;
     top: 10px;
-    /* justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    margin: 20px 0;
-    size: 10px; */
 }
 
 .p1 {
@@ -53,40 +29,42 @@ div {
     font-size: 20px;
     color: #333;
     margin: 10px;
-    
 }
-ul{
+
+ul {
     list-style-type: none;
     display: flex;
-    justify-content: middle;
-    align-items: middle;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     margin: 20px 0;
-
 }
-li{
+
+li {
     margin: 10px;
-    /* border: 2px solid black; */
-    padding : 10px;
+    padding: 10px;
     border-radius: 10px;
     background-color: #333;
-    color: ivory; 
+    color: ivory;
     text-align: center;
-    /* cursor: pointer; */
-    /* animation: cursor-animation 1s infinite;
 }
-nav-item{
-    margin: 10px;
-    color: ivory;
-    /* cursor: pointer; */
-    /* animation: cursor-animation 1s infinite; */
+
+#head{
+    /* font-size: 10px; */
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    background-color: none !important;
+    
 }
-li a{
+
+
+li a {
     color: ivory;
+    background-color: #333;
     text-decoration: none;
     text-align: center;
-    /* cursor: pointer; */
-    /* animation: cursor-animation 1s infinite; */
 }
 
 footer {
@@ -97,28 +75,6 @@ footer {
     background-color: #333;
     text-align: center;
     padding: 10px;
-
-}
-/* .rowFooter {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    margin: 20px 0;
-} */
-
-p {
-    /* margin: 10px;
-    border: 2px solid black;
-    padding : 10px; */
-}
-
-.col {
-    /* display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    margin: 20px 0; */
 }
 
 @keyframes cursor-animation {
@@ -126,87 +82,75 @@ p {
     50% { transform: scale(1.3); }
     100% { transform: scale(1); }
 }
+
 @keyframes flyIn {
     0% { transform: translateY(-100%); }
     100% { transform: translateY(0); }
 }
 
-.navbar{
+/* .navbar {
     background-color: #333;
     color: ivory;
     text-align: center;
     padding: 10px;
     animation: flyIn 1s ease-out;
-}
+} */
 
-
-.navbar-brand{
+.navbar-brand {
     color: ivory;
     font-size: 30px;
-    font-weight: bold; 
+    font-weight: bold;
 }
 
-.nav-item{
+.nav-item {
     margin: 10px;
     color: ivory;
-    /* cursor: pointer; */
-    /* animation: cursor-animation 1s infinite; */
 }
 
-#navbarNav{
+/* #navbarNav {
     border: black;
     border-radius: 10px;
     padding: 10px;
-
-}
-.nav-link {
-    color: ivory;
-    background-color: #333;
-    font-size: 15px;
-    font-weight: bold;
-    border-radius: 10px;
-    padding: 5px;
-    animation: flyIn 1s ease-out;
-    
-}
-/* nav a{
-    color: ivory;
-    text-decoration: none;
-    /* cursor: pointer; */
-    /* animation: cursor-animation 1s infinite; 
 } */
 
+.nav-link {
+    display: inline-block;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+/* .nav-link.active {
+    color: white;
+    text-decoration: none;
+} */
 
-.nav-link:hover{
-    color: ivory;
-    background-color: dimgray;
-    /* background-color: darkred; */
-    border-radius: 10px;
-    /* border: #000 2px solid; */
+.nav-link:hover {
+    background-color: #333 !important;
+    color: ivory !important;
 }
 
 img {
     display: block;
-    /* margin-left: auto; */
     width: 350px;
-    /* Adjust as needed */
     height: auto;
     border: 2px solid #000;
     float: right;
 }
+
 .btn-custom {
     display: inline-block;
-    /* background-color: #333 !important; */
     color: white;
     padding: 10px 20px;
     margin: 10px;
     border-radius: 5px;
     cursor: pointer;
     text-decoration: none;
-    /* animation: cursor-animation 1s infinite; */
 }
+
 .btn-custom:hover {
     background-color: #333 !important;
     color: ivory !important;
-    /* border: 2px solid #333; */
 }
