@@ -8,6 +8,12 @@ html {
     background-color: lightslategray;
     overflow-x: hidden; ;
 }
+h3 {
+    text-align: center;
+    font-size: 10px;
+    color: #333;
+    margin: 10px;
+}
 
 /* body{
     display: flex;
@@ -32,13 +38,55 @@ div {
     flex-wrap: wrap;
     margin: 20px 0; */
 }
+#rowSM {
+    display: fixed;
+    top: 10px;
+    /* justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px 0;
+    size: 10px; */
+}
 
 .p1 {
     text-align: center;
     font-size: 20px;
     color: #333;
     margin: 10px;
+    
+}
+ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: middle;
+    align-items: middle;
+    flex-wrap: wrap;
+    margin: 20px 0;
 
+}
+li{
+    margin: 10px;
+    /* border: 2px solid black; */
+    padding : 10px;
+    border-radius: 10px;
+    background-color: #333;
+    color: ivory; 
+    text-align: center;
+    /* cursor: pointer; */
+    /* animation: cursor-animation 1s infinite;
+}
+nav-item{
+    margin: 10px;
+    color: ivory;
+    /* cursor: pointer; */
+    /* animation: cursor-animation 1s infinite; */
+}
+li a{
+    color: ivory;
+    text-decoration: none;
+    text-align: center;
+    /* cursor: pointer; */
+    /* animation: cursor-animation 1s infinite; */
 }
 
 footer {
@@ -84,36 +132,36 @@ p {
 }
 
 .navbar{
-    background-color: white;
-    color: darkred;
+    background-color: #333;
+    color: ivory;
     text-align: center;
     padding: 10px;
     animation: flyIn 1s ease-out;
 }
 
+
 .navbar-brand{
-    color: darkred;
+    color: ivory;
     font-size: 30px;
-    font-weight: bold;
-
-    
+    font-weight: bold; 
 }
-.navbar-brand
-{
-    color: darkred;
 
-    
+.nav-item{
+    margin: 10px;
+    color: ivory;
+    /* cursor: pointer; */
+    /* animation: cursor-animation 1s infinite; */
 }
+
 #navbarNav{
     border: black;
     border-radius: 10px;
     padding: 10px;
 
-
-
 }
-.nav-link{
-    color: darkred;
+.nav-link {
+    color: ivory;
+    background-color: #333;
     font-size: 15px;
     font-weight: bold;
     border-radius: 10px;
@@ -121,13 +169,20 @@ p {
     animation: flyIn 1s ease-out;
     
 }
+/* nav a{
+    color: ivory;
+    text-decoration: none;
+    /* cursor: pointer; */
+    /* animation: cursor-animation 1s infinite; 
+} */
 
 
 .nav-link:hover{
-    color: white;
+    color: ivory;
+    background-color: dimgray;
     /* background-color: darkred; */
     border-radius: 10px;
-    border: #000 2px solid;
+    /* border: #000 2px solid; */
 }
 
 img {
@@ -148,5 +203,10 @@ img {
     border-radius: 5px;
     cursor: pointer;
     text-decoration: none;
-    animation: cursor-animation 1s infinite;
+    /* animation: cursor-animation 1s infinite; */
+}
+.btn-custom:hover {
+    background-color: #333 !important;
+    color: ivory !important;
+    /* border: 2px solid #333; */
 }
