@@ -142,12 +142,12 @@ img {
     float: right;
 }
 #middlepic {
-    display: block;
+display: block;
     width: 450px;
     height: 350px;
     border: 2px solid #000;
-    float: left;
-
+    float: auto;
+    
 }
 
 .btn-custom {
