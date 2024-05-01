@@ -140,6 +140,10 @@ img {
     height: auto;
     border: 2px solid #000;
     float: right;
+    transition: transform 0.3s ease-in-out;
+}
+img:hover {
+    transform: scale(1.1);
 }
 #middlepic {
 display: block;
