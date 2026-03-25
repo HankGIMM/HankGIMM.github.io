@@ -6,134 +6,207 @@
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <!-- added meta name "viewport" line as suggested by webpagetest -->
-    <meta name="viewport" content="width=device-width, initail-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Hank Davidson's Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">My Portfolio</a>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">Hank Davidson</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li id="head" class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">About</a>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
                     </li>
-                    <li id="head" class="nav-item">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#education">Education</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="project.html">Projects</a>
                     </li>
-                    <!-- <li id="head" class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li> -->
-                    <li>
-                        <p> Jump to section:</p>
-                    <li id="head" class="nav-item">
-                        <a href="#about">About me</a>
-                    </li>
-                    <li id="head" class="nav-item">
-                        <a href="#contact">Contact me</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <!-- <div class="container">
-        <div class="row" id="rowSM">
-            <div class="col">
-                <h3>Jump too:</h3>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Hank Davidson</h1>
+            <p>Interactive Media Designer & Game Developer</p>
+            <a href="#about" class="cta-button">Learn More</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <p>Passionate about creating immersive interactive experiences</p>
+        <div class="about-content">
+            <div class="about-text">
+                <h3>Hello! I'm Hank Davidson</h3>
+                <p>I am an Interactive Media Designer currently seeking a role in the Game Development Industry. I have been working with interactive media for around 4 years now and have gained proficiency with Unity, Unreal Engine, HTML, Audio Engineering, Level Design and much more during my time as a student.</p>
+                <p>The Boise State GIMM program has provided me with a strong foundation in these areas and has prepared me for the challenges of the industry. With our technology growing at an exponential rate, it's hard to say where we'll end up. I just know that wherever I go, I will always be at the top of my field.</p>
+            </div>
+            <div class="about-image">
+                <img src="IMG_2816.JPG" alt="Hank Davidson">
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <h2>Skills</h2>
+        <p>Technical proficiencies and tools I work with</p>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <h3>Game Engines</h3>
                 <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li>Unity</li>
+                    <li>Unreal Engine</li>
+                </ul>
+            </div>
+            <div class="skill-card">
+                <h3>3D Modeling</h3>
+                <ul>
+                    <li>Maya</li>
+                </ul>
+            </div>
+            <div class="skill-card">
+                <h3>Audio</h3>
+                <ul>
+                    <li>Audacity</li>
+                    <li>MuseScore</li>
+                    <li>Logic Pro</li>
+                </ul>
+            </div>
+            <div class="skill-card">
+                <h3>Web Development</h3>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+            </div>
+            <div class="skill-card">
+                <h3>Programming</h3>
+                <ul>
+                    <li>C#</li>
+                    <li>C++</li>
+                    <li>Python</li>
+                    <li>Java</li>
+                </ul>
+            </div>
+            <div class="skill-card">
+                <h3>Other</h3>
+                <ul>
+                    <li>JSON</li>
+                    <li>Node.js</li>
+                    <li>SQL</li>
                 </ul>
             </div>
         </div>
-    </div> -->
-    <!--Image and intro text-->
-    <div class="container text-center">
-        <div class="row">
-            <div class="col">
-                <h2 id="about">About me!</h2>
-                <br>
-                <p class="p1">
-                    My name is Hank Davidson and I am a Interactive Media Designer! I am currently seeking a role in the
-                    Game Development Industry. I have been working with interactive media for around 4 years now and
-                    have gained proficiency with Unity, Unreal Engine, HTML, Audio Engineering, Level Design and much more during my
-                    time as a student. The Boise State GIMM program has provided me with a strong foundation in these areas
-                    and has prepared me for the challenges of the industry. With our technology growing at an
-                    exponential rate its hard to say where we'll end up. I just know that where ever I go, I will
-                    always be at the top of my field.
-                </p>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <h2>Experience</h2>
+        <p>Projects and work experience in interactive media</p>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <h3>Educational VR Project</h3>
+                <p>Spring 2023</p>
+                <p>Developed an immersive virtual reality educational experience using Unity and VR technologies.</p>
             </div>
-            <div class="col">
-                <img src="IMG_2816.JPG" alt="me">
+            <div class="skill-card">
+                <h3>Interactive Comic Project</h3>
+                <p>Fall 2023</p>
+                <p>Created an interactive comic application combining storytelling with user interaction.</p>
+            </div>
+            <div class="skill-card">
+                <h3>Augmented Reality Project</h3>
+                <p>Spring 2022</p>
+                <p>Built an AR application that enhances real-world environments with digital content.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section">
+        <h2>Education</h2>
+        <p>Academic background and certifications</p>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <h3>Bachelor's Degree</h3>
+                <p>Games & Interactive Media Design & Mobile</p>
+                <p>Boise State University</p>
+                <p>Fall 2022 - Spring 2026</p>
+            </div>
+            <div class="skill-card">
+                <h3>Certificate of Product Management</h3>
+                <p>Boise State University</p>
+                <p>Summer 2025 - Spring 2026</p>
+            </div>
+            <div class="skill-card">
+                <h3>Certificate in Elementary German</h3>
+                <p>Boise State University</p>
+                <p>Fall 2025 - Spring 2026</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h2>Contact Me</h2>
+        <p>Let's connect and discuss opportunities</p>
+        <div class="contact-content">
+            <div class="contact-links">
+                <a href="mailto:hankdavidson22@gmail.com" class="contact-link">Email</a>
+                <a href="https://www.linkedin.com/in/hank-davidson-044895251/" target="_blank" class="contact-link">LinkedIn</a>
+                <a href="https://github.com/HankGIMM" target="_blank" class="contact-link">GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Toast Notification -->
+    <div class="toast-container position-fixed top-0 end-0 p-3">
+        <div id="welcomeToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <strong class="me-auto">Welcome!</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+                Thanks for visiting my portfolio! Feel free to explore my work.
             </div>
         </div>
     </div>
-    <br>
-    <!--Resume style bullet points-->
-    <div class="container text-center">
-        <div class="row">
-            <div class="col">
-                <h2>Skills</h2>
-                <ul>
-                    <li id="Tli">Unity</li>
-                    <li id="Tli">Unreal Engine</li>
-                    <li id="Tli">Maya</li>
-                    <li id="Tli">Audacity</li>
-                    <li id="Tli">MuseScore</li>
-                    <li id="Tli">Logic Pro</li>
-                    <li id="Tli">HTML</li>
-                    <li id="Tli">CSS</li>
-                    <li id="Tli">C#</li>
-                    <li id="Tli">C++</li>
-                    <li id="Tli">JavaScript</li>
-                    <li id="Tli">Python</li>
-                    <li id="Tli">Java</li>
-                    <li id="Tli">JSON</li>
-                    <li id="Tli">Node.js</li>
-                    <li id="Tli">SQL</li>
-                </ul>
-            </div>
-            <div class="col">
-                <h2>Experience</h2>
-                <ul>
-                    <li id="Tli">Educational Virtual Reality Project: (Spring 2023)</li>
-                    <li id="Tli"> Interactive Comic Project: (Fall 2023)</li>
-                    <li id="Tli">Augmented Reality Project: (Spring 2022)</li>
-                </ul>
-            </div>
-            <div class="col">
-                <h2>Education</h2>
-                <ul>
-                    <li id="Tli">Current: Bachelor's Degree in Games & Interactive Media Design & Mobile (Fall 2022 -
-                        Spring 2026)</li>
-                    <li id="Tli">Current: Certificate of Product Managment (Summer 2025 - Spring 2026)</li>
-                    <li id="Tli">Current: Certificate in Elementary German (Fall 2025 - Spring 2026)</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <!--Footer-->
-    <footer class="footer">
-        <div class="container text-center">
-            <div class="row">
-                <div class="col">
-                    <h2 id="contact">Contact Me</h2>
-                    <a href="mailto:hankdavidson22@gmail.com" target="_blank" class="btn btn-custom">Email:</a>
-                    <a href="https://www.linkedin.com/in/hank-davidson-044895251/" target="_blank"
-                        class="btn btn-custom">LinkedIn:</a>
-                    <a href="https://github.com/HankGIMM" target="_blank" class="btn btn-custom">GitHub:</a>
-                </div>
-            </div>
-        </div>
-    </footer>
+
+    <script>
+        // Show toast on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            var toastEl = document.getElementById('welcomeToast');
+            var toast = new bootstrap.Toast(toastEl);
+            toast.show();
+        });
+    </script>
 </body>
 
 </html>
