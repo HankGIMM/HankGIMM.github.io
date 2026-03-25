@@ -88,11 +88,9 @@ html {
 
 /* Sections */
 .section {
-    padding: 5rem 0;
+    padding: 5rem 2rem;
     max-width: 1200px;
     margin: 0 auto;
-    padding-left: 2rem;
-    padding-right: 2rem;
 }
 
 .section h2 {
@@ -121,24 +119,44 @@ html {
     margin-top: 3rem;
 }
 
+.about-text {
+    padding: 1rem;
+}
+
 .about-text h3 {
     font-size: 1.8rem;
     margin-bottom: 1rem;
     color: #1a1a1a;
 }
 
+.about-text p {
+    margin-bottom: 1rem;
+    line-height: 1.7;
+}
+
+.about-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
 .about-image img {
     width: 100%;
+    max-width: 400px;
+    height: auto;
     border-radius: 20px;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
 }
 
 /* Skills Section */
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
     margin-top: 3rem;
+    justify-items: center;
 }
 
 .skill-card {
@@ -148,7 +166,14 @@ html {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     text-align: center;
     transition: transform 0.3s ease;
+    width: 100%;
+    max-width: 320px;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
+
 
 .skill-card:hover {
     transform: translateY(-5px);
@@ -181,6 +206,7 @@ html {
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 2rem;
     margin-top: 3rem;
+    justify-items: center;
 }
 
 .project-card {
@@ -189,6 +215,11 @@ html {
     overflow: hidden;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
+    width: 100%;
+    max-width: 400px;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
 }
 
 .project-card:hover {
@@ -237,8 +268,10 @@ html {
 .contact-links {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 2rem;
     margin-top: 2rem;
+    flex-wrap: wrap;
 }
 
 .contact-link {
@@ -250,6 +283,8 @@ html {
     border-radius: 50px;
     font-weight: 600;
     transition: all 0.3s ease;
+    min-width: 120px;
+    text-align: center;
 }
 
 .contact-link:hover {
@@ -288,8 +323,24 @@ html {
         padding: 3rem 1rem;
     }
 
+    .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
     .contact-links {
         flex-direction: column;
         align-items: center;
+        gap: 1rem;
+    }
+
+    .skill-card,
+    .project-card {
+        max-width: 100%;
     }
 }
